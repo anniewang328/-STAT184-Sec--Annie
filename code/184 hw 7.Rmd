@@ -1,0 +1,23 @@
+
+
+```{r}
+library(ggplot2)
+library(dplyr)
+x_summary <- diamonds %>%
+  group_by(cut) %>%
+  summarize(
+    count = n(),
+    min_x = min(x),
+    Q1_x = quantile(x, 0.25),
+    median_x = median(x),
+    Q3_x = quantile(x, 0.75),
+    max_x = max(x),
+    mad_x = mad(x),
+    mean_x = mean(x),
+    sd_x = sd(x)
+  )
+print(x_summary)
+
+```
+
+
