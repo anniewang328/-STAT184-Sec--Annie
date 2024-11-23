@@ -7,3 +7,7 @@ Implementation: import and analyze dataset, summarize and visualize data, format
 import pandas as pd
 data = pd.read_csv("data/carsear/csv")
 print(data.describe())
+
+Results or Conclusion: document findings clearly using Markdown, generated statistics and visualizations for car seat
+
+Contact: ymw5492@psu.edu
